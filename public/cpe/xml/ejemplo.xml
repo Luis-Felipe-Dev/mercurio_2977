@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoice>
+            <cliente>FERNANDO QUIROZ</cliente>
+            <fecha>2023-04-19</fecha>
+            <total>2000</total>
+            <producto>
+                <cantidad>1</cantidad>
+                <precio>2000</precio>
+                <descripcion>LAPTOP GAMER ASUS</descripcion>
+            </producto>
+        </invoice>
