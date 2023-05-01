@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno>
+                <codigo>COD001</codigo>
+                <dni>12345678</dni>
+                <nombres>GANDALF</nombres>
+                <apellidos>RINGS</apellidos>
+                <carrera>CINE</carrera><curso>
+                        <periodo>202310</periodo>
+                        <NRC>2977</NRC>
+                        <nombre>INTEGRACION DE APLICACIONES</nombre>
+                        <creditos>3</creditos>
+                    </curso><curso>
+                        <periodo>202310</periodo>
+                        <NRC>1001</NRC>
+                        <nombre>ADMINISTRACION DE BASE DE DATOS</nombre>
+                        <creditos>3</creditos>
+                    </curso></alumno>

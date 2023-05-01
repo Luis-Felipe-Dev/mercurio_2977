@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isil><profesor>
+                    <codigo>COD001</codigo>
+                    <nombres>FERNANDO JACOBO</nombres>
+                    <apellidos>QUIROZ CABANILLAS</apellidos>
+                    <dni>12345678</dni>
+                    <especialidad>SOFTWARE</especialidad><curso>
+                        <codigo_profesor>COD001</codigo_profesor>
+                        <periodo>202310</periodo>
+                        <NRC>2977</NRC>
+                        <nombre>INTEGRACION DE APLICACIONES</nombre>
+                        <creditos>3</creditos>
+                        <horario>07:00:00</horario>
+                        <horas_semana>18</horas_semana>
+                        <modalidad>REMOTO</modalidad>
+                    </curso><curso>
+                        <codigo_profesor>COD001</codigo_profesor>
+                        <periodo>202310</periodo>
+                        <NRC>2578</NRC>
+                        <nombre>ADMINISTRACIÓN DE BASE DE DATOS</nombre>
+                        <creditos>4</creditos>
+                        <horario>19:00:00</horario>
+                        <horas_semana>20</horas_semana>
+                        <modalidad>PRESENCIAL - SAN ISIDRO</modalidad>
+                    </curso><curso>
+                        <codigo_profesor>COD001</codigo_profesor>
+                        <periodo>202310</periodo>
+                        <NRC>2496</NRC>
+                        <nombre>INTRODUCCION A LA PROGRAMACION</nombre>
+                        <creditos>3</creditos>
+                        <horario>13:00:00</horario>
+                        <horas_semana>15</horas_semana>
+                        <modalidad>PRESENCIAL - MIRAFLORES</modalidad>
+                    </curso></profesor><profesor>
+                    <codigo>COD002</codigo>
+                    <nombres>MARÍA FERNANDA</nombres>
+                    <apellidos>CORNEJO SOTO</apellidos>
+                    <dni>12345678</dni>
+                    <especialidad>IDIOMAS</especialidad><curso>
+                        <codigo_profesor>COD002</codigo_profesor>
+                        <periodo>202310</periodo>
+                        <NRC>2632</NRC>
+                        <nombre>IDIOMA EXTRANJERO I</nombre>
+                        <creditos>2</creditos>
+                        <horario>07:00:00</horario>
+                        <horas_semana>12</horas_semana>
+                        <modalidad>VIRTUAL</modalidad>
+                    </curso><curso>
+                        <codigo_profesor>COD002</codigo_profesor>
+                        <periodo>202310</periodo>
+                        <NRC>2547</NRC>
+                        <nombre>IDIOMA EXTRANJERO II</nombre>
+                        <creditos>2</creditos>
+                        <horario>19:00:00</horario>
+                        <horas_semana>12</horas_semana>
+                        <modalidad>VIRTUAL</modalidad>
+                    </curso><curso>
+                        <codigo_profesor>COD002</codigo_profesor>
+                        <periodo>202310</periodo>
+                        <NRC>2489</NRC>
+                        <nombre>IDIOMA EXTRANJERO III</nombre>
+                        <creditos>2</creditos>
+                        <horario>13:00:00</horario>
+                        <horas_semana>12</horas_semana>
+                        <modalidad>VIRTUAL</modalidad>
+                    </curso></profesor></isil>

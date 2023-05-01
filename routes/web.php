@@ -21,3 +21,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/factura', [App\Http\Controllers\FacturaController::class, 'index'])->name('factura');
+Route::get('/ejercicio1', [App\Http\Controllers\Ejercicio1Controller::class, 'index'])->name('ejercicio1');
+Route::get('/ep1', [App\Http\Controllers\Ep1Controller::class, 'index'])->name('ep1');
