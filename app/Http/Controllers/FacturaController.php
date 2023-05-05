@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\FE\api_cpe;
 use App\FE\api_genera_xml;
+use Illuminate\Http\Request;
+use Illuminate\Support\Arr;
 
 class FacturaController extends Controller
 {
@@ -31,7 +33,9 @@ class FacturaController extends Controller
             'nrodoc'                    =>  '20987456321',
             'razon_social'              =>  'BRUCE WAYNE',
             'direccion'                 =>  'GOTIKA',
+            'pais'                      =>  'PE',
         );
+
 
         $comprobante = array(
             'tipodoc'                   =>  '01', //boleta: 03, factura: 01
@@ -126,10 +130,25 @@ class FacturaController extends Controller
         //print_r($emisor);
         //echo '<h1>Bienvenido a Integración de Aplicaciones ISIL 202310</h1>';
 
-        //PARTE 1: CREAR EL XML
+        //PARTE I: CREAR EL XML
         $objCreaXML = new api_genera_xml();
-        $objCreaXML->crea_xml_invoice();
 
-        echo 'Se creo el xml de ejemplo';
+        $nombreXML = $emisor['nrodoc'] . '-' . $comprobante['tipodoc'] . '-' . $comprobante['serie'] . '-' . $comprobante['correlativo']; //nombre del XML a guardar
+        $rutaXML = 'cpe/xml/'; //ruta donde se guardar los archivos XML
+
+        $resultado = $objCreaXML->crea_xml_invoice($rutaXML . $nombreXML, $emisor, $cliente, $comprobante, $detalle, $cuotas);
+
+        if ($resultado == 1) {
+            echo 'PARTE I: SE CREO EL XML CON EXITO';
+        } else {
+            echo 'PARTE I: ERROR EN CREAR EL XML';
+        }
+
+        //PARTE II - CONSUMO DE WEB SERVICE SUNAT Y RESULTADO
+        $objCPE = new api_cpe(); //api para el consumo de WS-SUNAT
+        echo '</br> PARTE II - CONSUMO WEB SERVICE SUNAT Y RESULTADO';
+        $objCPE->enviar_invoice($emisor, $nombreXML);
+
+
     }
 }
