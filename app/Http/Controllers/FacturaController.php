@@ -62,7 +62,7 @@ class FacturaController extends Controller
             array(
                 'cuota'                 =>  'Cuota001',
                 'monto'                 =>  500.00,
-                'fecha'                 =>  '2023-04-30'
+                'fecha'                 =>  '2023-05-30'
             )
         );
 
@@ -147,8 +147,17 @@ class FacturaController extends Controller
         //PARTE II - CONSUMO DE WEB SERVICE SUNAT Y RESULTADO
         $objCPE = new api_cpe(); //api para el consumo de WS-SUNAT
         echo '</br> PARTE II - CONSUMO WEB SERVICE SUNAT Y RESULTADO';
-        $objCPE->enviar_invoice($emisor, $nombreXML);
+        $resultado_sunat = $objCPE->enviar_invoice($emisor, $nombreXML);
 
+        echo '</br> Estado de envío: ' . $resultado_sunat['estado_envio'];
+        echo '</br> Estado de envío mensaje: ' . $resultado_sunat['estado_envio_mensaje'];
+        echo '</br> HASH-CPE: ' . $resultado_sunat['hash_cpe'];
+        echo '</br> Descripción: ' . $resultado_sunat['descripcion'];
+        echo '</br> Nota: ' . $resultado_sunat['nota'];
+        echo '</br> Código de error: ' . $resultado_sunat['codigo_error'];
+        echo '</br> Mensaje de error: ' . $resultado_sunat['mensaje_error'];
+        echo '</br> HTTP Code: ' . $resultado_sunat['http_code'];
+        echo '</br> Respuesta: ' . $resultado_sunat['respuesta'];
 
     }
 }
