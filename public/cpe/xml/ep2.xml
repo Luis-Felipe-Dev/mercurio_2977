@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<isil><alumno>
+                <codigo_alumno>ALUM001</codigo_alumno>
+                <nombres_apellidos>VICENTE TEJEDA</nombres_apellidos>
+                <dni>87654321</dni>
+                <carrera>DESARROLLO DE SOFTWARE</carrera><curso>
+                        <nrc>3254</nrc>
+                        <nombre>DESARROLLO DE APLICACIONES EMPRESARIALES II</nombre>
+                        <periodo>202220</periodo>
+                        <codigo_alumno>ALUM001</codigo_alumno>
+                        <nota>16</nota>
+                        </curso><curso>
+                        <nrc>4542</nrc>
+                        <nombre>DESARROLLO DE SOLUCIONES CLOUD</nombre>
+                        <periodo>202220</periodo>
+                        <codigo_alumno>ALUM001</codigo_alumno>
+                        <nota>15</nota>
+                        </curso><curso>
+                        <nrc>2452</nrc>
+                        <nombre>DESARROLLO DE APLICACIONES EMPRESARIALES I</nombre>
+                        <periodo>202220</periodo>
+                        <codigo_alumno>ALUM001</codigo_alumno>
+                        <nota>19</nota>
+                        </curso><periodo>
+                        <perido>202220</perido>
+                        <codigo_alumno>ALUM001</codigo_alumno>
+                        <promedio_ponderado>17</promedio_ponderado>
+                        </periodo></alumno><alumno>
+                <codigo_alumno>ALUM002</codigo_alumno>
+                <nombres_apellidos>LUIS HUARANCA</nombres_apellidos>
+                <dni>62345678</dni>
+                <carrera>DESARROLLO DE SOFTWARE</carrera><curso>
+                        <nrc>5245</nrc>
+                        <nombre>ANALISIS DEL ENTORNO DE NEGOCIOS</nombre>
+                        <periodo>202310</periodo>
+                        <codigo_alumno>ALUM002</codigo_alumno>
+                        <nota>10</nota>
+                        </curso><curso>
+                        <nrc>8542</nrc>
+                        <nombre>ANALISIS Y DISEÑO DE SISTEMAS II</nombre>
+                        <periodo>202310</periodo>
+                        <codigo_alumno>ALUM002</codigo_alumno>
+                        <nota>5</nota>
+                        </curso><curso>
+                        <nrc>1645</nrc>
+                        <nombre>INTEGRACION DE APLICACIONES</nombre>
+                        <periodo>202310</periodo>
+                        <codigo_alumno>ALUM002</codigo_alumno>
+                        <nota>20</nota>
+                        </curso><periodo>
+                        <perido>202310</perido>
+                        <codigo_alumno>ALUM002</codigo_alumno>
+                        <promedio_ponderado>12</promedio_ponderado>
+                        </periodo></alumno><alumno>
+                <codigo_alumno>ALUM003</codigo_alumno>
+                <nombres_apellidos>OMAR VILLARREAL</nombres_apellidos>
+                <dni>24516524</dni>
+                <carrera>ING. COMPUTACION E INFORMATICA</carrera><curso>
+                        <nrc>4562</nrc>
+                        <nombre>ADMINISTRACIÓN BASE DE DATOS</nombre>
+                        <periodo>202210</periodo>
+                        <codigo_alumno>ALUM003</codigo_alumno>
+                        <nota>16</nota>
+                        </curso><curso>
+                        <nrc>2145</nrc>
+                        <nombre>COMUNICACIÓN ESCRITA</nombre>
+                        <periodo>202210</periodo>
+                        <codigo_alumno>ALUM003</codigo_alumno>
+                        <nota>17</nota>
+                        </curso><periodo>
+                        <perido>202210</perido>
+                        <codigo_alumno>ALUM003</codigo_alumno>
+                        <promedio_ponderado>17</promedio_ponderado>
+                        </periodo></alumno></isil>
