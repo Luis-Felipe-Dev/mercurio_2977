@@ -3,7 +3,10 @@
                 <codigo_alumno>ALUM001</codigo_alumno>
                 <nombres_apellidos>VICENTE TEJEDA</nombres_apellidos>
                 <dni>87654321</dni>
-                <carrera>DESARROLLO DE SOFTWARE</carrera><curso>
+                <carrera>DESARROLLO DE SOFTWARE</carrera><periodo>
+                        <periodo>202220</periodo>
+                        <codigo_alumno>ALUM001</codigo_alumno>
+                        <promedio_ponderado>17</promedio_ponderado><curso>
                         <nrc>3254</nrc>
                         <nombre>DESARROLLO DE APLICACIONES EMPRESARIALES II</nombre>
                         <periodo>202220</periodo>
@@ -21,15 +24,14 @@
                         <periodo>202220</periodo>
                         <codigo_alumno>ALUM001</codigo_alumno>
                         <nota>19</nota>
-                        </curso><periodo>
-                        <perido>202220</perido>
-                        <codigo_alumno>ALUM001</codigo_alumno>
-                        <promedio_ponderado>17</promedio_ponderado>
-                        </periodo></alumno><alumno>
+                        </curso></periodo></alumno><alumno>
                 <codigo_alumno>ALUM002</codigo_alumno>
                 <nombres_apellidos>LUIS HUARANCA</nombres_apellidos>
                 <dni>62345678</dni>
-                <carrera>DESARROLLO DE SOFTWARE</carrera><curso>
+                <carrera>DESARROLLO DE SOFTWARE</carrera><periodo>
+                        <periodo>202310</periodo>
+                        <codigo_alumno>ALUM002</codigo_alumno>
+                        <promedio_ponderado>12</promedio_ponderado><curso>
                         <nrc>5245</nrc>
                         <nombre>ANALISIS DEL ENTORNO DE NEGOCIOS</nombre>
                         <periodo>202310</periodo>
@@ -47,15 +49,14 @@
                         <periodo>202310</periodo>
                         <codigo_alumno>ALUM002</codigo_alumno>
                         <nota>20</nota>
-                        </curso><periodo>
-                        <perido>202310</perido>
-                        <codigo_alumno>ALUM002</codigo_alumno>
-                        <promedio_ponderado>12</promedio_ponderado>
-                        </periodo></alumno><alumno>
+                        </curso></periodo></alumno><alumno>
                 <codigo_alumno>ALUM003</codigo_alumno>
                 <nombres_apellidos>OMAR VILLARREAL</nombres_apellidos>
                 <dni>24516524</dni>
-                <carrera>ING. COMPUTACION E INFORMATICA</carrera><curso>
+                <carrera>ING. COMPUTACION E INFORMATICA</carrera><periodo>
+                        <periodo>202210</periodo>
+                        <codigo_alumno>ALUM003</codigo_alumno>
+                        <promedio_ponderado>17</promedio_ponderado><curso>
                         <nrc>4562</nrc>
                         <nombre>ADMINISTRACIÓN BASE DE DATOS</nombre>
                         <periodo>202210</periodo>
@@ -67,8 +68,4 @@
                         <periodo>202210</periodo>
                         <codigo_alumno>ALUM003</codigo_alumno>
                         <nota>17</nota>
-                        </curso><periodo>
-                        <perido>202210</perido>
-                        <codigo_alumno>ALUM003</codigo_alumno>
-                        <promedio_ponderado>17</promedio_ponderado>
-                        </periodo></alumno></isil>
+                        </curso></periodo></alumno></isil>

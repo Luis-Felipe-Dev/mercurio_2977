@@ -14,19 +14,19 @@ class EP2Controller extends Controller
         $alumnos = array(
             array(
                 'codigo_alumno'         => 'ALUM001',
-                'nombres_apellidos'   => 'VICENTE TEJEDA',
+                'nombres_apellidos'     => 'VICENTE TEJEDA',
                 'dni'                   => '87654321',
                 'carrera'               => 'DESARROLLO DE SOFTWARE'
             ),
             array(
                 'codigo_alumno'         => 'ALUM002',
-                'nombres_apellidos'   => 'LUIS HUARANCA',
+                'nombres_apellidos'     => 'LUIS HUARANCA',
                 'dni'                   => '62345678',
                 'carrera'               => 'DESARROLLO DE SOFTWARE'
             ),
             array(
                 'codigo_alumno'         => 'ALUM003',
-                'nombres_apellidos'   => 'OMAR VILLARREAL',
+                'nombres_apellidos'     => 'OMAR VILLARREAL',
                 'dni'                   => '24516524',
                 'carrera'               => 'ING. COMPUTACION E INFORMATICA'
             )
@@ -34,17 +34,17 @@ class EP2Controller extends Controller
 
         $periodos = array(
             array(
-                'perido'                => '202220',
+                'periodo'                => '202220',
                 'codigo_alumno'         => 'ALUM001',
                 'promedio_ponderado'    => 0
             ),
             array(
-                'perido'                => '202310',
+                'periodo'                => '202310',
                 'codigo_alumno'         => 'ALUM002',
                 'promedio_ponderado'    =>  0
             ),
             array(
-                'perido'                => '202210',
+                'periodo'                => '202210',
                 'codigo_alumno'         => 'ALUM003',
                 'promedio_ponderado'    =>  0
             )

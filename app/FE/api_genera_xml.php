@@ -371,20 +371,21 @@ class api_genera_xml
         $doc->save('cpe/xml/ep1.xml'); // guardamos el xml generado
         return 1;
     }
-
-    // public function promedio_ponderado($cursos, $codigo_alumno)
-    // {
-    //     $notas = array();
-    //     $promedio_ponderado = 0;
-    //     foreach ($cursos as $key => $curso) {
-    //         if ($curso['codigo_alumno'] == $codigo_alumno) {
-    //             array_push($notas, $curso['nota']);
-    //             break;
-    //         }
-    //         $promedio_ponderado = array_sum($notas) / count($notas);
-    //     }
-    //     return $promedio_ponderado;
-    // }
+    
+    public function promedio_ponderado($cursos, $codigo_alumno)
+    {
+        $notas = array();
+        $promedio_ponderado = 0;
+        foreach ($cursos as $key => $curso) {
+            if ($curso['codigo_alumno'] == $codigo_alumno) {
+                array_push($notas, $curso['nota']);
+            }
+        }
+        foreach($notas as $key => $nota){
+            $promedio_ponderado += $nota;
+        }
+        return round($promedio_ponderado / count($notas));
+    }
 
     public function crear_xml_ep2($alumnos, $periodos, $cursos)
     {
@@ -396,17 +397,22 @@ class api_genera_xml
         $xml = '<?xml version="1.0" encoding="UTF-8"?><isil>';
         foreach ($alumnos as $key => $alumno) {
             $promedio_ponderado = 0;
-            $cantidad_cursos = 0;
             $xml = $xml .
                 '<alumno>
                 <codigo_alumno>' . $alumno['codigo_alumno'] . '</codigo_alumno>
                 <nombres_apellidos>' . $alumno['nombres_apellidos'] . '</nombres_apellidos>
                 <dni>' . $alumno['dni'] . '</dni>
                 <carrera>' . $alumno['carrera'] . '</carrera>';
-            foreach ($cursos as $key => $curso) {
-                if ($curso['codigo_alumno'] == $alumno['codigo_alumno']) {
-                    $cantidad_cursos += 1;
+            foreach ($periodos as $key => $periodo) {
+                if ($periodo['codigo_alumno'] == $alumno['codigo_alumno']) {
                     $xml = $xml .
+                        '<periodo>
+                        <periodo>' . $periodo['periodo'] . '</periodo>
+                        <codigo_alumno>' . $periodo['codigo_alumno'] . '</codigo_alumno>
+                        <promedio_ponderado>' . $this->promedio_ponderado($cursos, $periodo['codigo_alumno']) . '</promedio_ponderado>';
+                foreach ($cursos as $key => $curso) {
+                    if ($periodo['periodo'] == $curso['periodo']) {
+                        $xml = $xml .
                         '<curso>
                         <nrc>' . $curso['nrc'] . '</nrc>
                         <nombre>' . $curso['nombre'] . '</nombre>
@@ -414,21 +420,12 @@ class api_genera_xml
                         <codigo_alumno>' . $curso['codigo_alumno'] . '</codigo_alumno>
                         <nota>' . $curso['nota'] . '</nota>
                         </curso>';
-                    $promedio_ponderado += $curso['nota'];
+                        $promedio_ponderado += $curso['nota'];
+                    }
+                }
+                $xml = $xml . '</periodo>';
                 }
             }
-            $promedio_ponderado = $promedio_ponderado / $cantidad_cursos;
-            foreach ($periodos as $key => $periodo) {
-                if ($periodo['codigo_alumno'] == $alumno['codigo_alumno']) {
-                    $xml = $xml .
-                        '<periodo>
-                        <perido>' . $periodo['perido'] . '</perido>
-                        <codigo_alumno>' . $periodo['codigo_alumno'] . '</codigo_alumno>
-                        <promedio_ponderado>' . round($promedio_ponderado) . '</promedio_ponderado>
-                        </periodo>';
-                }
-            }
-
             $xml = $xml . '</alumno>';
         }
         $xml = $xml . '</isil>';
